@@ -6,3 +6,7 @@ body{
   box-sizing: border-box;
   margin: 0;
 }
+.navbar-blur{
+  backdrop-filter: blur(5px);
+  background: #0c0c0c46 !important;
+}

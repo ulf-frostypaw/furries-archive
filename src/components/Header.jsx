@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 const Header = () =>{
     return(
-        <nav class="navbar is-black is-radiusless" role="navigation" aria-label="main navigation">
+        <nav class="navbar navbar-blur is-fixed-top is-black is-radiusless" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <Link className="navbar-item" to="/">FN</Link>
 

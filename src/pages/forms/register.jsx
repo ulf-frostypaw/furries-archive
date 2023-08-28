@@ -16,7 +16,7 @@ const Register = () => {
                             <div className="field">
                                 <label>Nombre</label>
                                 <p class="control">
-                                    <input class="input is-medium" required type="text" disabled placeholder="Juanito" />
+                                    <input class="input is-medium" required type="text" placeholder="Juanito" />
                                 </p>
                             </div>                   
                         </div>
@@ -24,7 +24,7 @@ const Register = () => {
                             <div className="field">
                                 <label>Apellido</label>
                                 <p class="control">
-                                    <input class="input is-medium" type="text" disabled placeholder="Alcachofa" />
+                                    <input class="input is-medium" type="text" placeholder="Alcachofa" />
                                 </p>
                             </div> 
                         </div>
@@ -34,7 +34,7 @@ const Register = () => {
                             <div className="field">
                                 <label>Correo electronico</label>
                                 <p class="control has-icons-left has-icons-right">
-                                    <input class="input is-medium" type="email" required disabled placeholder="MyUsername" />
+                                    <input class="input is-medium" type="email" required placeholder="MyUsername" />
                                     <span class="icon is-small is-left">
                                         <BiUser />
                                     </span>
@@ -47,7 +47,7 @@ const Register = () => {
                             <div className="field">
                                 <label>Contraseña</label>
                                 <p class="control has-icons-left has-icons-right">
-                                    <input class="input is-medium" type="password" required disabled placeholder="Contraseña" />
+                                    <input class="input is-medium" type="password" required placeholder="Contraseña" />
                                     <span class="icon is-small is-left">
                                         <BiLock />
                                     </span>

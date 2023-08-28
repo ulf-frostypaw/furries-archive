@@ -15,7 +15,7 @@ const Login = () => {
                         <div className="field">
                             <label>Nombre de usuario o correo electronico</label>
                             <p class="control has-icons-left has-icons-right">
-                                <input class="input is-medium" disabled type="email" placeholder="MyUsername" />
+                                <input class="input is-medium" type="email" placeholder="MyUsername" />
                                 <span class="icon is-small is-left">
                                     <BiAt />
                                 </span>
@@ -26,7 +26,7 @@ const Login = () => {
                         <label>Contraseña:</label>
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input is-medium" disabled type="password" placeholder="Contraseña" />
+                                <input class="input is-medium" type="password" placeholder="Contraseña" />
                                 <span class="icon is-small is-left"><BiUser /></span>
                             </p>
                         </div>

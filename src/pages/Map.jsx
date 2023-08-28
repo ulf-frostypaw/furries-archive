@@ -15,7 +15,7 @@ const Map = () => {
     return(
         <Layout title="Mapa">
             <Suspense fallback={<Loading/>}>
-                <MapContainer center={[21.2709003, -100.7189763]} zoom={5} scrollWheelZoom={true} style={{ height: "calc(100vh - 60px)" }}>
+                <MapContainer center={[21.2709003, -100.7189763]} zoom={5} scrollWheelZoom={true} style={{ height: "calc(100vh - 65px)" }}>
                     <TileLayer
                         attribution={'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}
                         url={"https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"}
