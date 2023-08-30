@@ -2,6 +2,7 @@ import Header from './Header'
 import {BiHeart} from 'react-icons/bi'
 import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import Sidebar from './Sidebar'
 const Layout = ({children, title = []}) => {
     const location = useLocation()
     return(
@@ -10,9 +11,25 @@ const Layout = ({children, title = []}) => {
                     <title>{title} / Furries.Network</title> 
             </Helmet>
             <Header />
-            <div className='mb-6' style={{marginTop: 65 + "px"}}>
-                {children}
-            </div>
+            {
+                location.pathname === "/" || location.pathname === "/users" ?
+                <div className='mb-6' style={{marginTop: 60 + "px"}}>
+                    <div className="container">
+                        <div className="columns">
+                            <div className="column">
+                                <Sidebar />
+                            </div>
+                            {children}
+                            <div className="column"></div>
+                        </div>
+                    </div>
+                </div>
+                :
+                <div className='mb-6' style={{marginTop: 60 + "px"}}>
+                    {children}
+                </div>
+            }
+            
             {location.pathname !== "/" ?
                 <footer className="footer">
                     <div className="content has-text-centered">

@@ -1,4 +1,6 @@
 # Furries.network Front
-an open source social network for furries! 
+an open source social network for furries!
+- <strong style="color: red">NOTA: REVISAR Y DOCUMENTAR LA API EN LAS NUEVAS FUNCIONES</strong>
 ## TODO List:
-* [ ] API 
+* [x] API 
+* [ ] Redirigir a ```landing``` cuando esté en mantenimiento o no haya token de jwt

@@ -1,73 +1,29 @@
-import Layout from "../components/Layout"
-import {BiEnvelope, BiAt, BiUser} from 'react-icons/bi'
-const Home = () => {
+import '../landing.css'
+const Landing = () => {
     return(
-        <Layout>
-            <section class="hero">
-                <div class="hero-body">
-                    <p className="title is-1">Furries.Network</p>
-                    <p class="title">Registro anticipado</p>
-                    <p class="subtitle">Cuando estemos listos, te enviaremos un correo. Ingresa tus datos en el siguiente formulario:</p>
-                    <form action="" method="post">
-                        <div className="card p-5">
-                            <div className="columns">
-                                <div className="column">
-                                    <div class="field">
-                                        
-                                        <p class="control has-icons-left has-icons-right">
-                                            <input required class="input" type="text" placeholder="Nombre" />
-                                            <span class="icon is-small is-left">
-                                                <BiUser />
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="column">
-                                    <div class="field">
-                                        <p class="control has-icons-left has-icons-right">
-                                            <input class="input" type="text" placeholder="Apellido (opcional)" />
-                                            <span class="icon is-small is-left">
-                                                <BiUser />
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="columns">
-                                <div className="column">
-                                    <div class="field">
-                                        <p class="control has-icons-left">
-                                            <input required class="input" type="text" placeholder="Nombre de usuario" />
-                                            <span class="icon is-small is-left">
-                                                <BiAt />
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="columns">
-                                <div className="column">
-                                    <div class="field">
-                                        <p class="control has-icons-left">
-                                            <input required class="input" type="email" placeholder="Correo electronico" />
-                                            <span class="icon is-small is-left">
-                                                <BiEnvelope />
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="field">
+    <section class="hero is-info is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="column is-6 is-offset-3">
+                        <h1 class="title is-1">En mantenimiento</h1>
+                        <h2 class="subtitle">
+                            Cada día trabajamos arduamente para que nuestra plataforma tenga nuevas y mejores caracteristicas. Ingresa tu mail para notificarte cuando estemos de regreso. UwU
+                        </h2>
+                        <div class="box">
+                            <div class="field is-grouped">
+                                <p class="control is-expanded">
+                                    <input class="input" disabled className="has-background-grey-darker has-text-white-ter input" type="email" placeholder="Ingresa tu correo electronico" />
+                                </p>
                                 <p class="control">
-                                    <button class="button is-success">¡Listo, te esperaré!</button>
+                                    <button type="submit" className="button is-info">¡Notificame!</button>
                                 </p>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
-            </section>
-        </Layout>
+            </div>
+
+    </section>
     )
 }
-export default Home
+export default Landing

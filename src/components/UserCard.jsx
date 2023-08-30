@@ -1,23 +1,30 @@
+import { Link } from "react-router-dom"
+import {BiSolidUserPlus} from 'react-icons/bi'
 const UserCard = () => {
     return(
-        <div class="box has-text-centered has-background-white">
-            <div>
-                <div class="flex-shrink-0">
-                    <a href="#" class="image is-64x64 m-auto">
-                        <img alt="profil" src="/images/person/1.jpg" class="is-rounded"/>
-                    </a>
+        <div className="mb-4">
+            <div class="card">
+                <div className="card-content">
+                    <div className="media">
+                        <div className="media-left">
+                            <Link to="/user/userpahe" className="image is-48x48 m-auto">
+                                <img src="https://bulma.io/images/placeholders/96x96.png" className="is-rounded" alt="Placeholder image" />
+                            </Link>
+                        </div>
+                        <div className="media-content">
+                            <p className="title is-5">John Smith</p>
+                            <p className="subtitle is-6">@johnsmith</p>
+                        </div>
+                        <div className="media-right">
+                            <button type="submit" className="button primary">
+                                <span class="icon">
+                                    <BiSolidUserPlus />
+                                </span>
+                                <span>Seguir</span>    
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <p class="has-text-grey-dark">
-                        Charlie
-                    </p>
-                    <p class="has-text-grey-dark-light is-size-7">
-                        CTO
-                    </p>
-                </div>
-                <button class="button is-primary ">
-                    Add
-                </button>
             </div>
         </div>
     )
