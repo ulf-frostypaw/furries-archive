@@ -1,9 +1,12 @@
-import {BiAt, BiUser} from 'react-icons/bi'
-import {Link} from 'react-router-dom'
-import Layout from '../../components/Layout'
+import { Link } from "react-router-dom"
+import Layout from "../../components/Layout"
+
 const Login = () => {
     return(
-        <h1>Crer cuent</h1>
+        <Layout title="Iniciar sesion">
+            <h1>Hola de nuevo owo</h1>
+            <Link to="/register">Crear cuenta</Link>
+        </Layout>
     )
 }
 export default Login
